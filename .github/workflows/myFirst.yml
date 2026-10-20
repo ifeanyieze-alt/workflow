@@ -1,0 +1,26 @@
+# my first workflow
+name: testing testing workflow
+
+# to indicate when the workflow should run
+on:
+  push:
+    branches: [ main ]
+
+
+jobs:
+  testing-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello World!"
+
+      - name: Say Goodbye
+        run: echo "Goodbye World!"
+
+  another-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dependencies
+        run: echo "Installing dependencies..."
+
+        
